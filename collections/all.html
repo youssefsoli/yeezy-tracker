@@ -98,7 +98,7 @@ window.ShopifyPay.apiHost = "shop.app\/pay";
 })();
    </script>
    <script id="__st">
-    var __st={"a":27847098505,"offset":-28800,"reqid":"55d8bba0-503c-47b6-878d-782b0fd7ca15","pageurl":"yeezy.com\/collections\/all","u":"02be258f3d5a","p":"collection","rtyp":"collection","rid":284750151817};
+    var __st={"a":27847098505,"offset":-28800,"reqid":"da9d63cd-50be-4550-94a2-262c249fc6e9","pageurl":"yeezy.com\/collections\/all","u":"6ee791d77d1f","p":"collection","rtyp":"collection","rid":284750151817};
    </script>
    <script>
     window.ShopifyPaypalV4VisibilityTracking = true;
@@ -112,7 +112,7 @@ window.ShopifyPay.apiHost = "shop.app\/pay";
    </script>
    <script crossorigin="anonymous" data-source-attribution="shopify.dynamic-checkout" defer="defer" integrity="sha256-HAs5a9TQVLlKuuHrahvWuke+s1UlxXohfHeoYv8G2D8=" src="//yeezy.com/cdn/shopifycloud/shopify/assets/storefront/features-1c0b396bd4d054b94abae1eb6a1bd6ba47beb35525c57a217c77a862ff06d83f.js">
    </script>
-   <script data-sections="header" defer="defer" id="sections-script" src="//yeezy.com/cdn/shop/t/39/compiled_assets/scripts.js?4727">
+   <script data-sections="header" defer="defer" id="sections-script" src="//yeezy.com/cdn/shop/t/39/compiled_assets/scripts.js?4728">
    </script>
    <style id="shopify-dynamic-checkout-cart">
     @media screen and (min-width: 750px) {
@@ -1209,6 +1209,8 @@ for (var attr in meta) {
     margin-bottom: 32px;
     display: flex;
     justify-content: center;
+    opacity: 0;
+    transition: opacity .18s ease-in-out;
   }
   .section-template--15942246367369__products .product-card {
     display: flex;
@@ -1275,7 +1277,7 @@ for (var attr in meta) {
     }
 
     .section-template--15942246367369__products .product-card-details {
-      opacity: 1;
+      opacity: 1; 
     }
 
   }
@@ -2325,6 +2327,35 @@ for (var attr in meta) {
           </div>
          </div>
         </div>
+        <script id="country_detect">
+         if(window.Shopify.routes != null){
+      const getLocation = async () => {
+        return await fetch(
+          window.Shopify.routes.root
+            + 'browsing_context_suggestions.json'
+            + '?country[enabled]=true'
+            + `&country[exclude]=${window.Shopify.country}`
+            + '&language[enabled]=true'
+            + `&language[exclude]=${window.Shopify.language}`
+        ).then(r => r.json())
+      };
+      
+      getLocation().then(data => { 
+        var countrysInfo = [];
+        const scripTagCurrent = document.querySelector('#country_detect');
+        const no_send_ctr = ['US', 'MX', 'CA'];
+        if( no_send_ctr.includes(data.detected_values.country.handle) ){
+          document.querySelectorAll('[data-collectionGap]').forEach(elm => elm.remove());
+        }
+        scripTagCurrent.remove();
+      });
+    }
+    setTimeout(() => {
+      document.querySelectorAll('.section-template--15942246367369__products .grid-item').forEach( (item) => {
+        item.style.opacity = '1';
+      });
+    }, 280);
+        </script>
        </section>
       </div>
      </main>
