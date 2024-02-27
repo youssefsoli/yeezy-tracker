@@ -96,7 +96,7 @@ window.ShopifyPay.apiHost = "shop.app\/pay";
 })();
   </script>
   <script id="__st">
-   var __st={"a":27847098505,"offset":-28800,"reqid":"ec817462-8687-4eb5-962f-26e543e1e9f2","pageurl":"yeezy.com\/","u":"4576d81480ce","p":"home"};
+   var __st={"a":27847098505,"offset":-28800,"reqid":"94488c86-a511-4dc0-bb11-9f986f1e2715","pageurl":"yeezy.com\/","u":"fb35baf86468","p":"home"};
   </script>
   <script>
    window.ShopifyPaypalV4VisibilityTracking = true;
@@ -110,7 +110,7 @@ window.ShopifyPay.apiHost = "shop.app\/pay";
   </script>
   <script crossorigin="anonymous" data-source-attribution="shopify.dynamic-checkout" defer="defer" integrity="sha256-HAs5a9TQVLlKuuHrahvWuke+s1UlxXohfHeoYv8G2D8=" src="//yeezy.com/cdn/shopifycloud/shopify/assets/storefront/features-1c0b396bd4d054b94abae1eb6a1bd6ba47beb35525c57a217c77a862ff06d83f.js">
   </script>
-  <script data-sections="header" defer="defer" id="sections-script" src="//yeezy.com/cdn/shop/t/48/compiled_assets/scripts.js?4930">
+  <script data-sections="header" defer="defer" id="sections-script" src="//yeezy.com/cdn/shop/t/48/compiled_assets/scripts.js?4941">
   </script>
   <style id="shopify-dynamic-checkout-cart">
    @media screen and (min-width: 750px) {
@@ -1213,9 +1213,9 @@ for (var attr in meta) {
   } 
   .section-template--16239555117193__featured_collection .grid-uniform {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 18px;
-    padding: 0 9.5%;
+    padding: 0 3.5%;
   }
   .section-template--16239555117193__featured_collection .grid-item {
     margin-bottom: 32px;
@@ -1269,6 +1269,21 @@ for (var attr in meta) {
   .section-template--16239555117193__featured_collection .span {
     display: block;
     font-weight: 500;
+  }
+
+  @media(max-width:1024px) {
+    .section-template--16239555117193__featured_collection .grid-uniform {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      padding: 0 3.5%;
+    }
+    
+    .section-template--16239555117193__featured_collection .product-card-image {
+      width: 200px;
+      height: 200px;
+    }
+    
   }
 
   @media(max-width: 768px) {
