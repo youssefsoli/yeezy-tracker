@@ -411,12 +411,26 @@
       grid-template-columns: repeat(2, 1fr);
     }
 
+    .SkeletonExpressCheckoutButtons.ContactStepRedesign {
+      padding: var(--x-skeleton-spacing-large-200);
+      border-radius: var(--x-skeleton-border-radius-large);
+      background-color: var(--x-skeleton-default-color-backgroundSubdued);
+      @media screen and (max-width: 570px) {
+        border-radius: 0;
+        margin: 0 calc(var(--x-skeleton-spacing-large-200) * -1);
+      }
+    }
+
     .SkeletonExpressCheckoutButtons > *:first-child {
       grid-column: 1 / -1;
     }
 
     .SkeletonExpressCheckout {
       margin-bottom: var(--x-skeleton-spacing-large-500);
+    }
+
+    .SkeletonExpressCheckout.ContactStepRedesign {
+      margin-bottom: var(--x-skeleton-spacing-large-200);
     }
 
     .ExpressCheckoutDivider {
@@ -426,7 +440,29 @@
       padding-top: calc(var(--x-skeleton-spacing-large-500) - 1px);
     }
 
+    .ExpressCheckoutDivider.ContactStepRedesign {
+      padding-top: var(--x-skeleton-spacing-large-300);
+    }
+
+    @media screen and (max-width: 1000px) {
+      .SkeletonExpressCheckout.ContactStepRedesign {
+        margin-bottom: var(--x-skeleton-spacing-large-100);
+      }
+
+      .ExpressCheckoutDivider.ContactStepRedesign {
+        padding-top: var(--x-skeleton-spacing-large-200);
+      }
+    }
+
     @media screen and (min-width: 1000px) {
+      .SkeletonExpressCheckoutButtons {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .SkeletonExpressCheckoutButtons > *:first-child {
+        grid-column: auto;
+      }
+
       .SkeletonExpressCheckoutButtons {
         grid-template-columns: repeat(3, 1fr);
       }
@@ -629,6 +665,14 @@
       border-bottom: 1px solid var(--x-skeleton-default-color-border);
     }
 
+    .LoadingShellDisclosure.ContactStepRedesign {
+      background-color: var(--x-skeleton-color-schemes-scheme1-base-background);
+    }
+
+    .LoadingShellDisclosure.ShopPay.ContactStepRedesign {
+      border-bottom: none;
+    }
+
     .LoadingShellDisclosureButton {
       display: flex;
       justify-content: center;
@@ -692,6 +736,12 @@
         'header'
         'buyer-journey'
         'main-content-primary';
+    }
+
+    .LoadingShellMain .LoadingShellMainContent.ContactStepRedesign {
+      @media screen and (max-width: 570px) {
+        padding-top: 0;
+      }
     }
 
     .LoadingShellMainContentPrimary {
@@ -809,7 +859,7 @@
      </div>
     </div>
    </header>
-   <div class="LoadingShellDisclosure">
+   <div class="LoadingShellDisclosure ShopPay">
     <div class="LoadingShellDisclosureButton LoadingShellDisclosureButton-containerFill">
      <span class="LoadingShellDisclosureButtonContent FadeIn">
       <span class="Text Text--size-small">
@@ -1058,15 +1108,15 @@
     </div>
    </div>
   </div>
-  <script crossorigin="" defer="" src="https://cdn.shopify.com/shopifycloud/checkout-web/assets/runtime.baseline.en.44d4d925dbe6bd1560ec.js">
+  <script crossorigin="" defer="" src="https://cdn.shopify.com/shopifycloud/checkout-web/assets/runtime.baseline.en.7de2f9c286f8bff18822.js">
   </script>
   <script crossorigin="" defer="" src="https://cdn.shopify.com/shopifycloud/checkout-web/assets/462.baseline.en.50a7e616ec07c4b7888c.js">
   </script>
   <script crossorigin="" defer="" src="https://cdn.shopify.com/shopifycloud/checkout-web/assets/532.baseline.en.d00484d74ca273560dd6.js">
   </script>
-  <script crossorigin="" defer="" src="https://cdn.shopify.com/shopifycloud/checkout-web/assets/681.baseline.en.d4b4243d9021918e18ed.js">
+  <script crossorigin="" defer="" src="https://cdn.shopify.com/shopifycloud/checkout-web/assets/681.baseline.en.9490023de9c85576ff00.js">
   </script>
-  <script crossorigin="" defer="" src="https://cdn.shopify.com/shopifycloud/checkout-web/assets/app.baseline.en.eca5185dfcc34f09cd83.js">
+  <script crossorigin="" defer="" src="https://cdn.shopify.com/shopifycloud/checkout-web/assets/app.baseline.en.816ce57f13872e961c86.js">
   </script>
   <script crossorigin="" defer="" src="https://cdn.shopify.com/shopifycloud/checkout-web/assets/751.baseline.en.3248b1ea37c8c8287656.js">
   </script>
@@ -1076,14 +1126,14 @@
   </script>
   <script crossorigin="" defer="" src="https://cdn.shopify.com/shopifycloud/checkout-web/assets/100.baseline.en.aaf5a5941b77953f0095.js">
   </script>
-  <script crossorigin="" defer="" src="https://cdn.shopify.com/shopifycloud/checkout-web/assets/OnePage.baseline.en.51566e9c3aca1a2cffa0.js">
+  <script crossorigin="" defer="" src="https://cdn.shopify.com/shopifycloud/checkout-web/assets/OnePage.baseline.en.b8e62232a10a0622ac27.js">
   </script>
   <link crossorigin="" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/462.baseline.en.dbe94d7e237982c05b73.css" rel="stylesheet"/>
   <link crossorigin="" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/app.baseline.en.f79e630f70b79519e81e.css" rel="stylesheet"/>
-  <link crossorigin="" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/836.baseline.en.d9dea636e91db7e4b650.css" rel="stylesheet"/>
-  <link crossorigin="" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/268.baseline.en.cd65dbf2ba6f5014d1dc.css" rel="stylesheet"/>
+  <link crossorigin="" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/836.baseline.en.5c8be743b69bc96dbc9b.css" rel="stylesheet"/>
+  <link crossorigin="" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/268.baseline.en.63927dd40af8649e3528.css" rel="stylesheet"/>
   <script>
-   document.cookie = 'queue_token=' + "AhR6EkA2eo_ZBb9axmGmtTl7SLa5gVlUTbSTteav0UV3IK7gjNNiQbVMERA1guMk2FumkPQy66tHp4R4RIgij74TR7HJohL1KSBet1_vthfi7C6kSOSH7o51AeonP7JUDer3hcIeP2K5NviAlRqrfPAKXhPpvf2YqifDauYuQqFK" + '; path=/; max-age=3300';
+   document.cookie = 'queue_token=' + "Aq-SpuJ5PgSGJDuj0ID3G9Qmp8WQPhZ9kd4KCjyQr02dX00D2dV8Srxh5s4NXUOj-QvqBeF_Bj4afPvMNZSTGTfSZw2xHlWa2jfqJ_OK54xBAX1UPDXgc6pNsHEZtM7ixl7MrKRZnivJT1uFggnmhVW8P9LWjFMR-MnmzaJJj8pI" + '; path=/; max-age=3300';
   </script>
   <script>
    window.location.href = 'https://yeezy.com/';
