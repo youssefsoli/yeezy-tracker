@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
  <head>
   <script data-locksmith="" type="application/vnd.locksmith+json">
-   {"version":"v100","locked":false,"initialized":true,"scope":"index","access_granted":true,"access_denied":false,"requires_customer":false,"manual_lock":false,"remote_lock":false,"has_timeout":false,"remote_rendered":null,"hide_resource":false,"hide_links_to_resource":false,"transparent":true,"locks":{"all":[],"opened":[]},"keys":[],"keys_signature":"b613679a0814d9ec772f95d778c35fc5ff1697c493715653c6c712144292c5ad","state":{"template":"index","theme":131898704009,"product":null,"collection":null,"page":null,"blog":null,"article":null,"app":null},"now":1711661913,"path":"\/","locale_root_url":"\/","canonical_url":"https:\/\/yeezy.com\/","customer_id":null,"customer_id_signature":"b613679a0814d9ec772f95d778c35fc5ff1697c493715653c6c712144292c5ad","cart":null}
+   {"version":"v100","locked":false,"initialized":true,"scope":"index","access_granted":true,"access_denied":false,"requires_customer":false,"manual_lock":false,"remote_lock":false,"has_timeout":false,"remote_rendered":null,"hide_resource":false,"hide_links_to_resource":false,"transparent":true,"locks":{"all":[],"opened":[]},"keys":[],"keys_signature":"b613679a0814d9ec772f95d778c35fc5ff1697c493715653c6c712144292c5ad","state":{"template":"index","theme":131898704009,"product":null,"collection":null,"page":null,"blog":null,"article":null,"app":null},"now":1711662237,"path":"\/","locale_root_url":"\/","canonical_url":"https:\/\/yeezy.com\/","customer_id":null,"customer_id_signature":"b613679a0814d9ec772f95d778c35fc5ff1697c493715653c6c712144292c5ad","cart":null}
   </script>
   <script data-locksmith="">
    !function(){var require=undefined,reqwest=function(){function succeed(e){var t=protocolRe.exec(e.url);return t=t&&t[1]||context.location.protocol,httpsRe.test(t)?twoHundo.test(e.request.status):!!e.request.response}function handleReadyState(e,t,n){return function(){return e._aborted?n(e.request):e._timedOut?n(e.request,"Request is aborted: timeout"):void(e.request&&4==e.request[readyState]&&(e.request.onreadystatechange=noop,succeed(e)?t(e.request):n(e.request)))}}function setHeaders(e,t){var n,s=t.headers||{};s.Accept=s.Accept||defaultHeaders.accept[t.type]||defaultHeaders.accept["*"];var r="undefined"!=typeof FormData&&t.data instanceof FormData;for(n in!t.crossOrigin&&!s[requestedWith]&&(s[requestedWith]=defaultHeaders.requestedWith),!s[contentType]&&!r&&(s[contentType]=t.contentType||defaultHeaders.contentType),s)s.hasOwnProperty(n)&&"setRequestHeader"in e&&e.setRequestHeader(n,s[n])}function setCredentials(e,t){"undefined"!=typeof t.withCredentials&&"undefined"!=typeof e.withCredentials&&(e.withCredentials=!!t.withCredentials)}function generalCallback(e){lastValue=e}function urlappend(e,t){return e+(/[?]/.test(e)?"&":"?")+t}function handleJsonp(e,t,n,s){var r=uniqid++,o=e.jsonpCallback||"callback",a=e.jsonpCallbackName||reqwest.getcallbackPrefix(r),i=new RegExp("((^|[?]|&)"+o+")=([^&]+)"),l=s.match(i),c=doc.createElement("script"),u=0,d=-1!==navigator.userAgent.indexOf("MSIE 10.0");return l?"?"===l[3]?s=s.replace(i,"$1="+a):a=l[3]:s=urlappend(s,o+"="+a),context[a]=generalCallback,c.type="text/javascript",c.src=s,c.async=!0,"undefined"!=typeof c.onreadystatechange&&!d&&(c.htmlFor=c.id="_reqwest_"+r),c.onload=c.onreadystatechange=function(){if(c[readyState]&&"complete"!==c[readyState]&&"loaded"!==c[readyState]||u)return!1;c.onload=c.onreadystatechange=null,c.onclick&&c.onclick(),t(lastValue),lastValue=undefined,head.removeChild(c),u=1},head.appendChild(c),{abort:function(){c.onload=c.onreadystatechange=null,n({},"Request is aborted: timeout",{}),lastValue=undefined,head.removeChild(c),u=1}}}function getRequest(e,t){var n,s=this.o,r=(s.method||"GET").toUpperCase(),o="string"==typeof s?s:s.url,a=!1!==s.processData&&s.data&&"string"!=typeof s.data?reqwest.toQueryString(s.data):s.data||null,i=!1;return("jsonp"==s.type||"GET"==r)&&a&&(o=urlappend(o,a),a=null),"jsonp"==s.type?handleJsonp(s,e,t,o):((n=s.xhr&&s.xhr(s)||xhr(s)).open(r,o,!1!==s.async),setHeaders(n,s),setCredentials(n,s),context[xDomainRequest]&&n instanceof context[xDomainRequest]?(n.onload=e,n.onerror=t,n.onprogress=function(){},i=!0):n.onreadystatechange=handleReadyState(this,e,t),s.before&&s.before(n),i?setTimeout(function(){n.send(a)},200):n.send(a),n)}function Reqwest(e,t){this.o=e,this.fn=t,init.apply(this,arguments)}function setType(e){return null===e?undefined:e.match("json")?"json":e.match("javascript")?"js":e.match("text")?"html":e.match("xml")?"xml":void 0}function init(o,fn){function complete(e){for(o.timeout&&clearTimeout(self.timeout),self.timeout=null;0<self._completeHandlers.length;)self._completeHandlers.shift()(e)}function success(resp){var type=o.type||resp&&setType(resp.getResponseHeader("Content-Type"));resp="jsonp"!==type?self.request:resp;var filteredResponse=globalSetupOptions.dataFilter(resp.responseText,type),r=filteredResponse;try{resp.responseText=r}catch(e){}if(r)switch(type){case"json":try{resp=context.JSON?context.JSON.parse(r):eval("("+r+")")}catch(err){return error(resp,"Could not parse JSON in response",err)}break;case"js":resp=eval(r);break;case"html":resp=r;break;case"xml":resp=resp.responseXML&&resp.responseXML.parseError&&resp.responseXML.parseError.errorCode&&resp.responseXML.parseError.reason?null:resp.responseXML}for(self._responseArgs.resp=resp,self._fulfilled=!0,fn(resp),self._successHandler(resp);0<self._fulfillmentHandlers.length;)resp=self._fulfillmentHandlers.shift()(resp);complete(resp)}function timedOut(){self._timedOut=!0,self.request.abort()}function error(e,t,n){for(e=self.request,self._responseArgs.resp=e,self._responseArgs.msg=t,self._responseArgs.t=n,self._erred=!0;0<self._errorHandlers.length;)self._errorHandlers.shift()(e,t,n);complete(e)}this.url="string"==typeof o?o:o.url,this.timeout=null,this._fulfilled=!1,this._successHandler=function(){},this._fulfillmentHandlers=[],this._errorHandlers=[],this._completeHandlers=[],this._erred=!1,this._responseArgs={};var self=this;fn=fn||function(){},o.timeout&&(this.timeout=setTimeout(function(){timedOut()},o.timeout)),o.success&&(this._successHandler=function(){o.success.apply(o,arguments)}),o.error&&this._errorHandlers.push(function(){o.error.apply(o,arguments)}),o.complete&&this._completeHandlers.push(function(){o.complete.apply(o,arguments)}),this.request=getRequest.call(this,success,error)}function reqwest(e,t){return new Reqwest(e,t)}function normalize(e){return e?e.replace(/\r?\n/g,"\r\n"):""}function serial(e,t){var n,s,r,o,a=e.name,i=e.tagName.toLowerCase(),l=function(e){e&&!e.disabled&&t(a,normalize(e.attributes.value&&e.attributes.value.specified?e.value:e.text))};if(!e.disabled&&a)switch(i){case"input":/reset|button|image|file/i.test(e.type)||(n=/checkbox/i.test(e.type),s=/radio/i.test(e.type),r=e.value,(!n&&!s||e.checked)&&t(a,normalize(n&&""===r?"on":r)));break;case"textarea":t(a,normalize(e.value));break;case"select":if("select-one"===e.type.toLowerCase())l(0<=e.selectedIndex?e.options[e.selectedIndex]:null);else for(o=0;e.length&&o<e.length;o++)e.options[o].selected&&l(e.options[o])}}function eachFormElement(){var e,t,o=this,n=function(e,t){var n,s,r;for(n=0;n<t.length;n++)for(r=e[byTag](t[n]),s=0;s<r.length;s++)serial(r[s],o)};for(t=0;t<arguments.length;t++)e=arguments[t],/input|select|textarea/i.test(e.tagName)&&serial(e,o),n(e,["input","select","textarea"])}function serializeQueryString(){return reqwest.toQueryString(reqwest.serializeArray.apply(null,arguments))}function serializeHash(){var n={};return eachFormElement.apply(function(e,t){e in n?(n[e]&&!isArray(n[e])&&(n[e]=[n[e]]),n[e].push(t)):n[e]=t},arguments),n}function buildParams(e,t,n,s){var r,o,a,i=/\[\]$/;if(isArray(t))for(o=0;t&&o<t.length;o++)a=t[o],n||i.test(e)?s(e,a):buildParams(e+"["+("object"==typeof a?o:"")+"]",a,n,s);else if(t&&"[object Object]"===t.toString())for(r in t)buildParams(e+"["+r+"]",t[r],n,s);else s(e,t)}var context=this,XHR2;if("window"in context)var doc=document,byTag="getElementsByTagName",head=doc[byTag]("head")[0];else try{XHR2=require("xhr2")}catch(ex){throw new Error("Peer dependency `xhr2` required! Please npm install xhr2")}var httpsRe=/^http/,protocolRe=/(^\w+):\/\//,twoHundo=/^(20\d|1223)$/,readyState="readyState",contentType="Content-Type",requestedWith="X-Requested-With",uniqid=0,callbackPrefix="reqwest_"+ +new Date,lastValue,xmlHttpRequest="XMLHttpRequest",xDomainRequest="XDomainRequest",noop=function(){},isArray="function"==typeof Array.isArray?Array.isArray:function(e){return e instanceof Array},defaultHeaders={contentType:"application/x-www-form-urlencoded",requestedWith:xmlHttpRequest,accept:{"*":"text/javascript, text/html, application/xml, text/xml, */*",xml:"application/xml, text/xml",html:"text/html",text:"text/plain",json:"application/json, text/javascript",js:"application/javascript, text/javascript"}},xhr=function(e){if(!0!==e.crossOrigin)return context[xmlHttpRequest]?new XMLHttpRequest:XHR2?new XHR2:new ActiveXObject("Microsoft.XMLHTTP");var t=context[xmlHttpRequest]?new XMLHttpRequest:null;if(t&&"withCredentials"in t)return t;if(context[xDomainRequest])return new XDomainRequest;throw new Error("Browser does not support cross-origin requests")},globalSetupOptions={dataFilter:function(e){return e}};return Reqwest.prototype={abort:function(){this._aborted=!0,this.request.abort()},retry:function(){init.call(this,this.o,this.fn)},then:function(e,t){return e=e||function(){},t=t||function(){},this._fulfilled?this._responseArgs.resp=e(this._responseArgs.resp):this._erred?t(this._responseArgs.resp,this._responseArgs.msg,this._responseArgs.t):(this._fulfillmentHandlers.push(e),this._errorHandlers.push(t)),this},always:function(e){return this._fulfilled||this._erred?e(this._responseArgs.resp):this._completeHandlers.push(e),this},fail:function(e){return this._erred?e(this._responseArgs.resp,this._responseArgs.msg,this._responseArgs.t):this._errorHandlers.push(e),this},"catch":function(e){return this.fail(e)}},reqwest.serializeArray=function(){var n=[];return eachFormElement.apply(function(e,t){n.push({name:e,value:t})},arguments),n},reqwest.serialize=function(){if(0===arguments.length)return"";var e,t=Array.prototype.slice.call(arguments,0);return(e=t.pop())&&e.nodeType&&t.push(e)&&(e=null),e&&(e=e.type),("map"==e?serializeHash:"array"==e?reqwest.serializeArray:serializeQueryString).apply(null,t)},reqwest.toQueryString=function(e,t){var n,s,r=t||!1,o=[],a=encodeURIComponent,i=function(e,t){t="function"==typeof t?t():null==t?"":t,o[o.length]=a(e)+"="+a(t)};if(isArray(e))for(s=0;e&&s<e.length;s++)i(e[s].name,e[s].value);else for(n in e)e.hasOwnProperty(n)&&buildParams(n,e[n],r,i);return o.join("&").replace(/%20/g,"+")},reqwest.getcallbackPrefix=function(){return callbackPrefix},reqwest.compat=function(e,t){return e&&(e.type&&(e.method=e.type)&&delete e.type,e.dataType&&(e.type=e.dataType),e.jsonpCallback&&(e.jsonpCallbackName=e.jsonpCallback)&&delete e.jsonpCallback,e.jsonp&&(e.jsonpCallback=e.jsonp)),new Reqwest(e,t)},reqwest.ajaxSetup=function(e){for(var t in e=e||{})globalSetupOptions[t]=e[t]},reqwest}();
@@ -16,7 +16,7 @@
    Locksmith.cache.cart=null
   </script>
   <script data-locksmith="">
-   Locksmith.jsonTag="\u003cscript type=\"application\/vnd.locksmith+json\" data-locksmith\u003e{\"version\":\"v100\",\"locked\":false,\"initialized\":true,\"scope\":\"index\",\"access_granted\":true,\"access_denied\":false,\"requires_customer\":false,\"manual_lock\":false,\"remote_lock\":false,\"has_timeout\":false,\"remote_rendered\":null,\"hide_resource\":false,\"hide_links_to_resource\":false,\"transparent\":true,\"locks\":{\"all\":[],\"opened\":[]},\"keys\":[],\"keys_signature\":\"b613679a0814d9ec772f95d778c35fc5ff1697c493715653c6c712144292c5ad\",\"state\":{\"template\":\"index\",\"theme\":131898704009,\"product\":null,\"collection\":null,\"page\":null,\"blog\":null,\"article\":null,\"app\":null},\"now\":1711661913,\"path\":\"\\\/\",\"locale_root_url\":\"\\\/\",\"canonical_url\":\"https:\\\/\\\/yeezy.com\\\/\",\"customer_id\":null,\"customer_id_signature\":\"b613679a0814d9ec772f95d778c35fc5ff1697c493715653c6c712144292c5ad\",\"cart\":null}\u003c\/script\u003e";Locksmith.jsonTagSignature="1c8ebc5889be5efc826864b814e9939a00cea8d8a57899b16e12655b61108ec6"
+   Locksmith.jsonTag="\u003cscript type=\"application\/vnd.locksmith+json\" data-locksmith\u003e{\"version\":\"v100\",\"locked\":false,\"initialized\":true,\"scope\":\"index\",\"access_granted\":true,\"access_denied\":false,\"requires_customer\":false,\"manual_lock\":false,\"remote_lock\":false,\"has_timeout\":false,\"remote_rendered\":null,\"hide_resource\":false,\"hide_links_to_resource\":false,\"transparent\":true,\"locks\":{\"all\":[],\"opened\":[]},\"keys\":[],\"keys_signature\":\"b613679a0814d9ec772f95d778c35fc5ff1697c493715653c6c712144292c5ad\",\"state\":{\"template\":\"index\",\"theme\":131898704009,\"product\":null,\"collection\":null,\"page\":null,\"blog\":null,\"article\":null,\"app\":null},\"now\":1711662237,\"path\":\"\\\/\",\"locale_root_url\":\"\\\/\",\"canonical_url\":\"https:\\\/\\\/yeezy.com\\\/\",\"customer_id\":null,\"customer_id_signature\":\"b613679a0814d9ec772f95d778c35fc5ff1697c493715653c6c712144292c5ad\",\"cart\":null}\u003c\/script\u003e";Locksmith.jsonTagSignature="4aa52e9ea014a23f16ed0e761ec3cc896e2b3661f258f1747cf43e379ab9c78e"
   </script>
   <meta charset="utf-8"/>
   <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
@@ -112,7 +112,7 @@ window.ShopifyPay.apiHost = "shop.app\/pay";
 })();
   </script>
   <script id="__st">
-   var __st={"a":27847098505,"offset":-25200,"reqid":"6ffc0d1a-adc2-4ee5-a3a3-54dd7c2ad81d-1711661913","pageurl":"yeezy.com\/","u":"2fbb775fdc99","p":"home"};
+   var __st={"a":27847098505,"offset":-25200,"reqid":"0c8764ae-0849-47e5-a011-e7b25c2e3758-1711662237","pageurl":"yeezy.com\/","u":"a5f2b34f2698","p":"home"};
   </script>
   <script>
    window.ShopifyPaypalV4VisibilityTracking = true;
@@ -1757,7 +1757,7 @@ for (var attr in meta) {
             </style>
             <style>
              #card__prd_id-7477053194377 {
-                    background-image:url('//yeezy.com/cdn/shop/files/1_38117d19-5e85-460a-85f6-c39ee227887f.png?height=650&v=1711545284'),url('//yeezy.com/cdn/shop/files/2_389a6bc3-c9f1-4c1b-bcca-7ceb6a9f1ca8.png?height=650&v=1711545283'),url('//yeezy.com/cdn/shop/files/3_c516b150-22e1-4932-a8b7-95a94a0ef42e.png?height=650&v=1711545281'),url('//yeezy.com/cdn/shop/files/4_71dd8caa-a7d4-427d-93d5-177f6fe79947.png?height=650&v=1711545283'),url('//yeezy.com/cdn/shop/files/5_38fe2ee4-74f2-4f5d-9a44-a77d2c89de1b.png?height=650&v=1711545284'),url('//yeezy.com/cdn/shop/files/6_f8222bbc-ed49-42cb-9649-f02c45f3f23b.png?height=650&v=1711545284'),url('//yeezy.com/cdn/shop/files/7_13236530-a840-49da-8a0a-e0e6d1f231f8.png?height=650&v=1711545281'),url('//yeezy.com/cdn/shop/files/8_769763ba-c579-4ac4-8076-afac77abdda2.png?height=650&v=1711545283');
+                    background-image:url('//yeezy.com/cdn/shop/files/1_d0790695-19c9-4ea7-8b8c-274bf039c64e.png?height=650&v=1711661985'),url('//yeezy.com/cdn/shop/files/2_8b766c5f-3429-48be-a59d-742dfda0fbef.png?height=650&v=1711661984'),url('//yeezy.com/cdn/shop/files/3_4c92f595-f113-4b1c-a0d7-f679b5e67d17.png?height=650&v=1711661982'),url('//yeezy.com/cdn/shop/files/4_b5d6c34c-eb64-4100-8b12-fe06724ec2e7.png?height=650&v=1711661984'),url('//yeezy.com/cdn/shop/files/5_21c3d00b-75cf-4ece-90c1-6082acbcdcb1.png?height=650&v=1711661985'),url('//yeezy.com/cdn/shop/files/6_f1a250db-cc06-45c8-aa87-b8d72cf4f2c2.png?height=650&v=1711661984'),url('//yeezy.com/cdn/shop/files/7_7a1a2a57-6558-43e5-a202-00ffdb4fca65.png?height=650&v=1711661982'),url('//yeezy.com/cdn/shop/files/8_3302af0f-334a-46ca-84bd-395fdb9d97e2.png?height=650&v=1711661984');
                     background-size: contain,0 0,0 0,0 0,0 0,0 0,0 0,0 0;
                     background-repeat: no-repeat;
                     background-position: top;
@@ -1927,7 +1927,7 @@ for (var attr in meta) {
             </style>
             <style>
              #card__prd_id-7477135933577 {
-                    background-image:url('//yeezy.com/cdn/shop/files/1_4fd7020a-f2fc-47cb-a1bf-5c81237eb220.png?height=650&v=1711545369'),url('//yeezy.com/cdn/shop/files/2_d185f348-822a-4520-a666-972f051aa973.png?height=650&v=1711545369'),url('//yeezy.com/cdn/shop/files/3_c2b3fc0d-b141-4826-8d74-66dfaf408a57.png?height=650&v=1711545367'),url('//yeezy.com/cdn/shop/files/4_f3bed2e2-a37c-488d-97ff-358e4c4bff14.png?height=650&v=1711545369'),url('//yeezy.com/cdn/shop/files/5_86aae2ea-8f93-43e8-98d2-d344d4c4fac3.png?height=650&v=1711545369'),url('//yeezy.com/cdn/shop/files/6_ad693ec3-8883-4141-b240-469820be1cb5.png?height=650&v=1711545369'),url('//yeezy.com/cdn/shop/files/7_242ff6d8-5a2b-4350-8319-d296a4c23d88.png?height=650&v=1711545367'),url('//yeezy.com/cdn/shop/files/8_77de10b0-5577-475e-9c9f-2bdf8ba2e3b7.png?height=650&v=1711545369');
+                    background-image:url('//yeezy.com/cdn/shop/files/1_adec1ec7-f2cd-411b-aa7e-b27118b1adcc.png?height=650&v=1711662062'),url('//yeezy.com/cdn/shop/files/2_d15ca306-58aa-45ef-923a-d43e96775f4f.png?height=650&v=1711662060'),url('//yeezy.com/cdn/shop/files/3_fd087a87-0c89-4b9f-9792-2822ea31c4b6.png?height=650&v=1711662058'),url('//yeezy.com/cdn/shop/files/4_268f9997-20ef-4b9f-b1ff-d6684113c111.png?height=650&v=1711662060'),url('//yeezy.com/cdn/shop/files/5_9a9ccee2-26c7-443e-bcdb-95e670a234af.png?height=650&v=1711662061'),url('//yeezy.com/cdn/shop/files/6_b302eced-7f49-4e2d-9b86-6114b6cf1f86.png?height=650&v=1711662061'),url('//yeezy.com/cdn/shop/files/7_539d0060-5939-4f6e-9039-2838107085fe.png?height=650&v=1711662058'),url('//yeezy.com/cdn/shop/files/8_a3278b6e-2852-4eab-be36-162fcbb7e889.png?height=650&v=1711662061');
                     background-size: contain,0 0,0 0,0 0,0 0,0 0,0 0,0 0;
                     background-repeat: no-repeat;
                     background-position: top;
@@ -2012,7 +2012,7 @@ for (var attr in meta) {
             </style>
             <style>
              #card__prd_id-7460480712841 {
-                    background-image:url('//yeezy.com/cdn/shop/files/1_37c983ea-6ed8-4904-9bc1-cca434ee34f9.png?height=650&v=1711411193'),url('//yeezy.com/cdn/shop/files/2_86b84054-b518-4545-a89a-89612b2f407c.png?height=650&v=1711411193'),url('//yeezy.com/cdn/shop/files/3_8866725a-a265-4a52-b663-9ef22bd27270.png?height=650&v=1711411190'),url('//yeezy.com/cdn/shop/files/4_023c0367-5461-4c91-8179-d114ad2a7638.png?height=650&v=1711411192'),url('//yeezy.com/cdn/shop/files/5_2c70c447-78b3-4059-8ea8-e50d5047a3cb.png?height=650&v=1711411193'),url('//yeezy.com/cdn/shop/files/6_5ecb3429-cf3f-47c2-9f40-02feb389f5ea.png?height=650&v=1711411192'),url('//yeezy.com/cdn/shop/files/7_95aac62d-4751-4587-ada4-4766fff9702e.png?height=650&v=1711411189'),url('//yeezy.com/cdn/shop/files/8_e9e407c9-62f0-4a07-bfbc-698964b63525.png?height=650&v=1711411192');
+                    background-image:url('//yeezy.com/cdn/shop/files/1_ca3afaed-aa70-42d7-9d33-10412d8383a4.png?height=650&v=1711662134'),url('//yeezy.com/cdn/shop/files/2_7f8f7853-dc24-466c-a147-530ad5d8ea25.png?height=650&v=1711662134'),url('//yeezy.com/cdn/shop/files/3_77defa67-f78f-4258-8940-e7cd9b8a5380.png?height=650&v=1711662131'),url('//yeezy.com/cdn/shop/files/4_a5208d58-1c12-46fe-a329-4440847fc9e2.png?height=650&v=1711662133'),url('//yeezy.com/cdn/shop/files/5_4b28cde3-f970-43e2-bbf4-3439d5d76305.png?height=650&v=1711662134'),url('//yeezy.com/cdn/shop/files/6_5043aab4-d1a6-4b19-9d49-8d9fe446aa70.png?height=650&v=1711662133'),url('//yeezy.com/cdn/shop/files/7_ce3785bd-d701-4d8b-843e-3217cdca1259.png?height=650&v=1711662130'),url('//yeezy.com/cdn/shop/files/8_28ec5661-bcba-41ba-b46a-bc3e6b593025.png?height=650&v=1711662133');
                     background-size: contain,0 0,0 0,0 0,0 0,0 0,0 0,0 0;
                     background-repeat: no-repeat;
                     background-position: top;
@@ -2414,91 +2414,6 @@ for (var attr in meta) {
             <div class="product-card-details">
              <h3 class="product-card-title">
               YZY GOSHA BLACK DOGS BLACK SOCK
-             </h3>
-             <span class="product-card-price">
-              $20
-             </span>
-            </div>
-           </a>
-          </div>
-          <div class="grid-item">
-           <a class="product-card" href="/products/yzy-mowalola-wet-tank ">
-            <div class="product-card-image" id="card__prd_id-7417248907401">
-            </div>
-            <style>
-             #card__prd_id-7417248907401 {
-                background-image: url(//yeezy.com/cdn/shop/files/WETWHITETANK_9fe2c156-4592-4715-94e3-d33ede1e69ee.png?height=650&v=1711596353);
-                background-size: contain;
-                background-repeat: no-repeat;
-                background-position: center;
-                animation: none;
-                animation-play-state: paused;/* Cambia la duración y el estilo de la animación según sea necesario */
-              }
-            </style>
-            <style>
-             #card__prd_id-7417248907401 {
-                    background-image:url('//yeezy.com/cdn/shop/files/1_3f519fca-bd40-48f6-9932-f7f1b75fe00a.png?height=650&v=1711409640'),url('//yeezy.com/cdn/shop/files/2_748fd329-23b8-4a7e-81ef-aaa96d4fdd63.png?height=650&v=1711409640'),url('//yeezy.com/cdn/shop/files/3_9371d35d-e30c-4200-b7a3-c3fccf87d45d.png?height=650&v=1711409638'),url('//yeezy.com/cdn/shop/files/4_699be425-9ec5-4ea5-b9fa-c727ea1ccb95.png?height=650&v=1711409640'),url('//yeezy.com/cdn/shop/files/5_74e9a321-a841-423d-afb5-01eb10753324.png?height=650&v=1711409640'),url('//yeezy.com/cdn/shop/files/6_dde9f14e-8575-47eb-bbce-68fab20a4e44.png?height=650&v=1711409640'),url('//yeezy.com/cdn/shop/files/7_cd8c6c2e-5461-434d-8f09-0618b54609d7.png?height=650&v=1711409638'),url('//yeezy.com/cdn/shop/files/8_4256da37-8c2c-4768-846d-ac0b2a0d2d4a.png?height=650&v=1711409640');
-                    background-size: contain,0 0,0 0,0 0,0 0,0 0,0 0,0 0;
-                    background-repeat: no-repeat;
-                    background-position: top;
-                    animation: none;
-                    animation-play-state: paused;/* Cambia la duración y el estilo de la animación según sea necesario */
-                  }
-                  
-                  #card__prd_id-7417248907401:hover {
-                    animation-play-state: running;
-                    animation: rotateBackgroundcard__prd_id-7417248907401 6s step-start infinite;
-                  }
-    
-                  
-                  
-                  
-                  
-                  @keyframes rotateBackgroundcard__prd_id-7417248907401 {
-                      
-                      
-                      0.0% {
-                        background-size: contain,0 0,0 0,0 0,0 0,0 0,0 0,0 0
-                       }
-                      
-                      
-                      12.5% {
-                        background-size: 0 0,contain,0 0,0 0,0 0,0 0,0 0,0 0
-                       }
-                      
-                      
-                      25.0% {
-                        background-size: 0 0,0 0,contain,0 0,0 0,0 0,0 0,0 0
-                       }
-                      
-                      
-                      37.5% {
-                        background-size: 0 0,0 0,0 0,contain,0 0,0 0,0 0,0 0
-                       }
-                      
-                      
-                      50.0% {
-                        background-size: 0 0,0 0,0 0,0 0,contain,0 0,0 0,0 0
-                       }
-                      
-                      
-                      62.5% {
-                        background-size: 0 0,0 0,0 0,0 0,0 0,contain,0 0,0 0
-                       }
-                      
-                      
-                      75.0% {
-                        background-size: 0 0,0 0,0 0,0 0,0 0,0 0,contain,0 0
-                       }
-                      
-                      
-                      87.5% {
-                        background-size: 0 0,0 0,0 0,0 0,0 0,0 0,0 0,contain
-                       }}
-            </style>
-            <div class="product-card-details">
-             <h3 class="product-card-title">
-              YZY MOWALOLA WET TANK
              </h3>
              <span class="product-card-price">
               $20
