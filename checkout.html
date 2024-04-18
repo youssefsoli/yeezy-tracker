@@ -25,34 +25,44 @@
   <style>
    :root {
       
-    --x-skeleton--global-accent: #000000;
+    
+    --x-skeleton-color-global-accent: hsl(204, 77%, 39%);
+    --x-skeleton-color-global-background: hsl(0, 0%, 100%);
+    --x-skeleton-color-global-backgroundSubdued: hsl(0, 0%, 96%);
+    --x-skeleton-color-global-border: hsl(0, 0%, 87%);
+    --x-skeleton-color-global-text: hsl(0, 0%, 0%);
+    --x-skeleton-color-global-textContrast: hsl(0, 0%, 100%);
+    --x-skeleton-color-global-textSubdued: hsl(0, 0%, 44%);
+    --x-skeleton-color-global-textSubdued200: hsl(0, 0%, 90%);
 
-    --x-skeleton-color-schemes-scheme1-base-background: #ffffff;
+    --x-skeleton-color-schemes-scheme2-base-background: hsl(0, 0%, 96%);
+    --x-skeleton-color-schemes-scheme2-base-backgroundSubdued: hsl(0, 0%, 93%);
+    --x-skeleton-color-schemes-scheme2-base-border: hsl(0, 0%, 84%);
+    --x-skeleton-color-schemes-scheme2-base-text: hsl(0, 0%, 0%);
+    --x-skeleton-color-schemes-scheme2-base-textContrast: hsl(0, 0%, 96%);
+    --x-skeleton-color-schemes-scheme2-base-textSubdued: hsl(0, 0%, 40%);
+    --x-skeleton-color-schemes-scheme2-base-textSubdued200: hsl(0, 0%, 80%);
+  
+    --x-skeleton-color-global-accent: #000000;
     --x-skeleton-color-schemes-scheme1-base-accent: #000000;
-    --x-skeleton-color-schemes-scheme1-base-backgroundSubdued: #f6f6f6;
-    --x-skeleton-color-schemes-scheme1-base-border: #dfdfdf;
-    --x-skeleton-color-schemes-scheme1-base-text: #000000;
-    --x-skeleton-color-schemes-scheme1-base-textContrast: #ffffff;
-    --x-skeleton-color-schemes-scheme1-base-textSubdued: #0000008f;
-    --x-skeleton-color-schemes-scheme1-base-textSubdued200: #0000001a;
+--x-skeleton-color-schemes-scheme1-base-background: #ffffff;
+--x-skeleton-color-schemes-scheme1-base-backgroundSubdued: #f6f6f6;
+--x-skeleton-color-schemes-scheme1-base-border: #dfdfdf;
+--x-skeleton-color-schemes-scheme1-base-text: #000000;
+--x-skeleton-color-schemes-scheme1-base-textContrast: #ffffff;
+--x-skeleton-color-schemes-scheme1-base-textSubdued: #0000008f;
+--x-skeleton-color-schemes-scheme1-base-textSubdued200: #0000001a;
+--x-skeleton-color-schemes-scheme2-base-accent: #000000;
+--x-skeleton-color-schemes-scheme2-base-background: #ffffff;
+--x-skeleton-color-schemes-scheme2-base-backgroundSubdued: #f6f6f6;
+--x-skeleton-color-schemes-scheme2-base-border: #dfdfdf;
+--x-skeleton-color-schemes-scheme2-base-text: #000000;
+--x-skeleton-color-schemes-scheme2-base-textContrast: #ffffff;
+--x-skeleton-color-schemes-scheme2-base-textSubdued: #0000008f;
+--x-skeleton-color-schemes-scheme2-base-textSubdued200: #0000001a;
 
-    --x-skeleton-color-schemes-scheme2-base-background: #ffffff;
-    --x-skeleton-color-schemes-scheme2-base-accent: #000000;
-    --x-skeleton-color-schemes-scheme2-base-backgroundSubdued: #f6f6f6;
-    --x-skeleton-color-schemes-scheme2-base-border: #dfdfdf;
-    --x-skeleton-color-schemes-scheme2-base-text: #000000;
-    --x-skeleton-color-schemes-scheme2-base-textContrast: #ffffff;
-    --x-skeleton-color-schemes-scheme2-base-textSubdued: #0000008f;
-    --x-skeleton-color-schemes-scheme2-base-textSubdued200: #0000001a;
 
-      --x-skeleton-default-color-background: var(--x-skeleton-color-schemes-scheme1-base-background);
-      --x-skeleton-default-color-accent: var(--x-skeleton-color-schemes-scheme1-base-accent);
-      --x-skeleton-default-color-backgroundSubdued: var(--x-skeleton-color-schemes-scheme1-base-backgroundSubdued);
-      --x-skeleton-default-color-border: var(--x-skeleton-color-schemes-scheme1-base-border);
-      --x-skeleton-default-color-text: var(--x-skeleton-color-schemes-scheme1-base-text);
-      --x-skeleton-default-color-textContrast: var(--x-skeleton-color-schemes-scheme1-base-textContrast);
-      --x-skeleton-default-color-textSubdued: var(--x-skeleton-color-schemes-scheme1-base-textSubdued);
-      --x-skeleton-default-color-textSubdued200: var(--x-skeleton-color-schemes-scheme1-base-textSubdued200);
+  
 
       --x-skeleton-typography-line-small: 1.2;
       --x-skeleton-typography-line-base: 1.5;
@@ -179,7 +189,7 @@
       min-height: calc(var(--x-skeleton-typography-size-default) * 24 / 14);
       width: calc(var(--x-skeleton-typography-size-default) * 24 / 14);
       height: calc(var(--x-skeleton-typography-size-default) * 24 / 14);
-      color: var(--x-skeleton-color-schemes-scheme1-base-accent, var(--x-skeleton--global-accent));
+      color: var(--x-skeleton-default-color-accent);
     }
 
     .CartIcon__svg {
@@ -222,11 +232,11 @@
     .Divider {
       width: 100%;
       height: 1px;
-      background-color: var(--x-skeleton-color-schemes-scheme1-base-border);
+      background-color: var(--x-skeleton-default-color-border);
     }
 
     .SkeletonButton {
-      background-color: var(--x-skeleton-color-schemes-scheme1-base-textSubdued200);
+      background-color: var(--x-skeleton-default-color-textSubdued200);
       border-radius: var(--x-skeleton-border-radius-base);
       animation: SkeletonPulse 4000ms ease infinite;
       width: 100%;
@@ -480,19 +490,6 @@
       --x-skeleton-cart-color: #fff;
     }
 
-    .ColorScheme2 {
-      --x-skeleton-default-color-background: var(--x-skeleton-color-schemes-scheme2-base-background);
-      --x-skeleton-default-color-accent: var(--x-skeleton-color-schemes-scheme2-base-accent);
-      --x-skeleton-default-color-backgroundSubdued: var(--x-skeleton-color-schemes-scheme2-base-backgroundSubdued);
-      --x-skeleton-default-color-border: var(--x-skeleton-color-schemes-scheme2-base-border);
-      --x-skeleton-default-color-text: var(--x-skeleton-color-schemes-scheme2-base-text);
-      --x-skeleton-default-color-textContrast: var(--x-skeleton-color-schemes-scheme2-base-textContrast);
-      --x-skeleton-default-color-textSubdued: var(--x-skeleton-color-schemes-scheme2-base-textSubdued);
-      --x-skeleton-default-color-textSubdued200: var(--x-skeleton-color-schemes-scheme2-base-textSubdued200);
-
-      background-color: var(--x-skeleton-default-color-background);
-      color: var(--x-skeleton-default-color-text);
-    }
 
     .VisuallyHidden {
       border-width: 0;
@@ -520,6 +517,63 @@
       }
     }
   
+    
+    
+        .colorSchemeScheme1 {
+          --x-skeleton-default-color-background: var(--x-skeleton-color-schemes-scheme1-base-background, var(--x-skeleton-color-global-background));
+          --x-skeleton-default-color-accent: var(--x-skeleton-color-schemes-scheme1-base-accent, var(--x-skeleton-color-global-accent));
+          --x-skeleton-default-color-backgroundSubdued: var(--x-skeleton-color-schemes-scheme1-base-backgroundSubdued, var(--x-skeleton-color-global-backgroundSubdued));
+          --x-skeleton-default-color-border: var(--x-skeleton-color-schemes-scheme1-base-border, var(--x-skeleton-color-global-border));
+          --x-skeleton-default-color-text: var(--x-skeleton-color-schemes-scheme1-base-text, var(--x-skeleton-color-global-text));
+          --x-skeleton-default-color-textContrast: var(--x-skeleton-color-schemes-scheme2-base-textContrast, var(--x-skeleton-color-global-textContrast));
+          --x-skeleton-default-color-textSubdued: var(--x-skeleton-color-schemes-scheme1-base-textSubdued, var(--x-skeleton-color-global-textSubdued));
+          --x-skeleton-default-color-textSubdued200: var(--x-skeleton-color-schemes-scheme1-base-textSubdued200, var(--x-skeleton-color-global-textSubdued200));
+        }
+      
+        .colorSchemeScheme2 {
+          --x-skeleton-default-color-background: var(--x-skeleton-color-schemes-scheme2-base-background, var(--x-skeleton-color-global-background));
+          --x-skeleton-default-color-accent: var(--x-skeleton-color-schemes-scheme2-base-accent, var(--x-skeleton-color-global-accent));
+          --x-skeleton-default-color-backgroundSubdued: var(--x-skeleton-color-schemes-scheme2-base-backgroundSubdued, var(--x-skeleton-color-global-backgroundSubdued));
+          --x-skeleton-default-color-border: var(--x-skeleton-color-schemes-scheme2-base-border, var(--x-skeleton-color-global-border));
+          --x-skeleton-default-color-text: var(--x-skeleton-color-schemes-scheme2-base-text, var(--x-skeleton-color-global-text));
+          --x-skeleton-default-color-textContrast: var(--x-skeleton-color-schemes-scheme2-base-textContrast, var(--x-skeleton-color-global-textContrast));
+          --x-skeleton-default-color-textSubdued: var(--x-skeleton-color-schemes-scheme2-base-textSubdued, var(--x-skeleton-color-global-textSubdued));
+          --x-skeleton-default-color-textSubdued200: var(--x-skeleton-color-schemes-scheme2-base-textSubdued200, var(--x-skeleton-color-global-textSubdued200));
+        }
+      
+        .colorSchemeScheme3 {
+          --x-skeleton-default-color-background: var(--x-skeleton-color-schemes-scheme3-base-background, var(--x-skeleton-color-global-background));
+          --x-skeleton-default-color-accent: var(--x-skeleton-color-schemes-scheme3-base-accent, var(--x-skeleton-color-global-accent));
+          --x-skeleton-default-color-backgroundSubdued: var(--x-skeleton-color-schemes-scheme3-base-backgroundSubdued, var(--x-skeleton-color-global-backgroundSubdued));
+          --x-skeleton-default-color-border: var(--x-skeleton-color-schemes-scheme3-base-border, var(--x-skeleton-color-global-border));
+          --x-skeleton-default-color-text: var(--x-skeleton-color-schemes-scheme3-base-text, var(--x-skeleton-color-global-text));
+          --x-skeleton-default-color-textContrast: var(--x-skeleton-color-schemes-scheme2-base-textContrast, var(--x-skeleton-color-global-textContrast));
+          --x-skeleton-default-color-textSubdued: var(--x-skeleton-color-schemes-scheme3-base-textSubdued, var(--x-skeleton-color-global-textSubdued));
+          --x-skeleton-default-color-textSubdued200: var(--x-skeleton-color-schemes-scheme3-base-textSubdued200, var(--x-skeleton-color-global-textSubdued200));
+        }
+      
+        .colorSchemeScheme4 {
+          --x-skeleton-default-color-background: var(--x-skeleton-color-schemes-scheme4-base-background, var(--x-skeleton-color-global-background));
+          --x-skeleton-default-color-accent: var(--x-skeleton-color-schemes-scheme4-base-accent, var(--x-skeleton-color-global-accent));
+          --x-skeleton-default-color-backgroundSubdued: var(--x-skeleton-color-schemes-scheme4-base-backgroundSubdued, var(--x-skeleton-color-global-backgroundSubdued));
+          --x-skeleton-default-color-border: var(--x-skeleton-color-schemes-scheme4-base-border, var(--x-skeleton-color-global-border));
+          --x-skeleton-default-color-text: var(--x-skeleton-color-schemes-scheme4-base-text, var(--x-skeleton-color-global-text));
+          --x-skeleton-default-color-textContrast: var(--x-skeleton-color-schemes-scheme2-base-textContrast, var(--x-skeleton-color-global-textContrast));
+          --x-skeleton-default-color-textSubdued: var(--x-skeleton-color-schemes-scheme4-base-textSubdued, var(--x-skeleton-color-global-textSubdued));
+          --x-skeleton-default-color-textSubdued200: var(--x-skeleton-color-schemes-scheme4-base-textSubdued200, var(--x-skeleton-color-global-textSubdued200));
+        }
+      
+
+    .backgroundColorBase {
+      background-color: var(--x-skeleton-default-color-background);
+      color: var(--x-skeleton-default-color-text);
+    }
+
+    .backgroundColorSubdued {
+      background-color: var(--x-skeleton-default-color-background-subdued);
+      color: var(--x-skeleton-default-color-text);
+    }
+  
 
     
 
@@ -542,7 +596,6 @@
         'header'
         'disclosure'
         'shell-content';
-      background-color: var(--x-skeleton-default-color-background);
       background-image: var(--x-skeleton-shell-background-image);
 
       --x-skeleton-shell-inline-size: 57rem;
@@ -604,13 +657,7 @@
 
     .LoadingShellHeader {
       grid-area: header;
-      background-color: var(--x-skeleton-default-color-background);
-      color: var(--x-skeleton-default-color-text);
-    }
 
-    .LoadingShellHeader-colorSchemeInherit {
-      background-color: transparent;
-      color: inherit;
     }
 
     .LoadingShellHeaderContent {
@@ -660,13 +707,13 @@
 
     .LoadingShellDisclosure {
       grid-area: disclosure;
-      background-color: var(--x-skeleton-color-schemes-scheme1-base-backgroundSubdued);
+      background-color: var(--x-skeleton-default-color-backgroundSubdued);
       display: var(--x-skeleton-shell-disclosure-display);
       border-bottom: 1px solid var(--x-skeleton-default-color-border);
     }
 
     .LoadingShellDisclosure.ContactStepRedesign {
-      background-color: var(--x-skeleton-color-schemes-scheme1-base-background);
+      background-color: var(--x-skeleton-default-color-background);
     }
 
     .LoadingShellDisclosure.ShopPay.ContactStepRedesign {
@@ -714,8 +761,6 @@
     }
 
     .LoadingShellMain {
-      background-color: var(--x-skeleton-default-color-background);
-      color: var(--x-skeleton-default-color-text);
       grid-area: main;
       display: flex;
       justify-content: var(--x-skeleton-shell-main-justify-content);
@@ -748,10 +793,6 @@
       grid-area: main-content-primary;
     }
 
-    .LoadingShellMain-colorSchemeInherit {
-      background-color: transparent;
-      color: inherit;
-    }
 
     .LoadingShellMainContent .LoadingShellHeader {
       margin-bottom: var(--x-skeleton-spacing-large-100);
@@ -765,8 +806,6 @@
     }
 
     .LoadingShellOrderSummary {
-      background-color: var(--x-skeleton-default-color-background);
-      color: var(--x-skeleton-default-color-text);
       display: var(--x-skeleton-shell-order-summary-display);
       grid-area: order-summary;
     }
@@ -780,11 +819,6 @@
       right: auto;
       bottom: 0;
       left: auto;
-    }
-
-    .LoadingShellOrderSummary-colorSchemeInherit {
-      background-color: transparent;
-      color: inherit;
     }
 
     .LoadingShellOrderSummaryContent .LoadingShellHeader {
@@ -841,8 +875,8 @@
       justify-content: end;
     }
   </style>
-  <div class="LoadingShell LoadingShellConfig-Header-positionStart LoadingShell-variantOneStepCheckout">
-   <header class="LoadingShellHeader LoadingShellHeader-containerFill LoadingShellHeader-positionStart" role="banner">
+  <div class="LoadingShell LoadingShellConfig-Header-positionStart LoadingShell-variantOneStepCheckout colorSchemeScheme1 backgroundColorBase">
+   <header class="LoadingShellHeader LoadingShellHeader-containerFill LoadingShellHeader-positionStart colorSchemeScheme1 backgroundColorBase" role="banner">
     <div class="LoadingShellHeaderContent">
      <div class="LoadingHeader">
       <h1 class="LoadingHeaderHeading">
@@ -859,7 +893,7 @@
      </div>
     </div>
    </header>
-   <div class="LoadingShellDisclosure ShopPay">
+   <div class="LoadingShellDisclosure colorSchemeScheme2 backgroundColorBase ShopPay">
     <div class="LoadingShellDisclosureButton LoadingShellDisclosureButton-containerFill">
      <span class="LoadingShellDisclosureButtonContent FadeIn">
       <span class="Text Text--size-small">
@@ -884,7 +918,7 @@
     </div>
    </div>
    <div class="LoadingShellContent LoadingShellContent-containerFill">
-    <div class="LoadingShellMain">
+    <div class="LoadingShellMain colorSchemeScheme1 backgroundColorBase">
      <div class="LoadingShellMainContent">
       <main class="LoadingShellMainContentPrimary FadeIn">
        <div class="SkeletonExpressCheckout">
@@ -982,7 +1016,7 @@
       </main>
      </div>
     </div>
-    <div class="LoadingShellOrderSummary ColorScheme2">
+    <div class="LoadingShellOrderSummary colorSchemeScheme2 backgroundColorBase">
      <div class="LoadingShellOrderSummaryContent">
       <aside class="LoadingShellOrderSummaryContentPrimary FadeIn">
        <div class="BlockStack BlockStack--spacing-large200">
@@ -1116,7 +1150,7 @@
   </script>
   <script crossorigin="" defer="" src="https://cdn.shopify.com/shopifycloud/checkout-web/assets/991.baseline.en.946cf9f98a4e54ee8c3c.js">
   </script>
-  <script crossorigin="" defer="" src="https://cdn.shopify.com/shopifycloud/checkout-web/assets/app.baseline.en.a746457371ea33d1ff37.js">
+  <script crossorigin="" defer="" src="https://cdn.shopify.com/shopifycloud/checkout-web/assets/app.baseline.en.53b1ba3be71fabe173b9.js">
   </script>
   <script crossorigin="" defer="" src="https://cdn.shopify.com/shopifycloud/checkout-web/assets/845.baseline.en.d590c77360b092302df2.js">
   </script>
@@ -1132,7 +1166,7 @@
   <link crossorigin="" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/app.baseline.en.aeb59316dbed7721ee92.css" rel="stylesheet"/>
   <link crossorigin="" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/268.baseline.en.3970055027214a5e7103.css" rel="stylesheet"/>
   <script>
-   document.cookie = 'queue_token=' + "Aoc8Z5ONXeCCy-FCyl7u_8PQFTlMp45ce4zI_WMnfpDdEXAKaoelfwHyZL9HlQ_kLZPKIrcCL2_To6I6K4Sfnx1fgjXyH21YJhFcSGmrZ9G614hvydOlqARJZjF9653x4ot8wB4hTKaK8XR9NmrvzPLILxSs86_ywjbeHJMVOCmd" + '; path=/; max-age=3300';
+   document.cookie = 'queue_token=' + "AvLQfUEDuoUzzJOIZrQ2R-XWRnqm8PAKPsBgLdCcsLnj7w_1jx0YuDSTnulm6jNOWz9qql14B7sACeCUAc42pqtOaF6RXM4duxbepvAwr5qCDpCyDA9rm7AmuCIQGOnxk5py80vOjkB3YlFPgArRlOE7CE-RJkNQkkNUgfT9pmWn" + '; path=/; max-age=3300';
   </script>
   <script>
    window.location.href = 'https://yeezy.com/';
