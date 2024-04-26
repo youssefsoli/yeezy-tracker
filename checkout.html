@@ -570,7 +570,7 @@
     }
 
     .backgroundColorSubdued {
-      background-color: var(--x-skeleton-default-color-background-subdued);
+      background-color: var(--x-skeleton-default-color-backgroundSubdued);
       color: var(--x-skeleton-default-color-text);
     }
   
@@ -697,6 +697,7 @@
 
     .LoadingShellHeader-positionStart.LoadingShellHeader-hasBackgroundImage {
       --header-shop-name-color: #ffffff;
+      --x-skeleton-default-color-accent: #ffffff;
     }
 
     .LoadingShellBuyerJourneyContent {
@@ -707,7 +708,6 @@
 
     .LoadingShellDisclosure {
       grid-area: disclosure;
-      background-color: var(--x-skeleton-default-color-backgroundSubdued);
       display: var(--x-skeleton-shell-disclosure-display);
       border-bottom: 1px solid var(--x-skeleton-default-color-border);
     }
@@ -728,7 +728,7 @@
 
     .LoadingShellDisclosureButton {
       text-align: start;
-      background: var(--x-skeleton-default-color-background-subdued);
+      background: var(--x-skeleton-default-color-backgroundSubdued);
       color: var(--x-skeleton-default-color-accent);
       position: relative;
       z-index: 2;
@@ -876,7 +876,7 @@
     }
   </style>
   <div class="LoadingShell LoadingShellConfig-Header-positionStart LoadingShell-variantOneStepCheckout colorSchemeScheme1 backgroundColorBase">
-   <header class="LoadingShellHeader LoadingShellHeader-containerFill LoadingShellHeader-positionStart colorSchemeScheme1 backgroundColorBase" role="banner">
+   <header class="LoadingShellHeader LoadingShellHeader-containerFill LoadingShellHeader-positionStart" role="banner">
     <div class="LoadingShellHeaderContent">
      <div class="LoadingHeader">
       <h1 class="LoadingHeaderHeading">
@@ -893,7 +893,7 @@
      </div>
     </div>
    </header>
-   <div class="LoadingShellDisclosure colorSchemeScheme2 backgroundColorBase ShopPay">
+   <div class="LoadingShellDisclosure ShopPay">
     <div class="LoadingShellDisclosureButton LoadingShellDisclosureButton-containerFill">
      <span class="LoadingShellDisclosureButtonContent FadeIn">
       <span class="Text Text--size-small">
@@ -918,7 +918,7 @@
     </div>
    </div>
    <div class="LoadingShellContent LoadingShellContent-containerFill">
-    <div class="LoadingShellMain colorSchemeScheme1 backgroundColorBase">
+    <div class="LoadingShellMain">
      <div class="LoadingShellMainContent">
       <main class="LoadingShellMainContentPrimary FadeIn">
        <div class="SkeletonExpressCheckout">
@@ -1016,7 +1016,7 @@
       </main>
      </div>
     </div>
-    <div class="LoadingShellOrderSummary colorSchemeScheme2 backgroundColorBase">
+    <div class="LoadingShellOrderSummary colorSchemeScheme1 backgroundColorBase">
      <div class="LoadingShellOrderSummaryContent">
       <aside class="LoadingShellOrderSummaryContentPrimary FadeIn">
        <div class="BlockStack BlockStack--spacing-large200">
@@ -1142,31 +1142,31 @@
     </div>
    </div>
   </div>
-  <script crossorigin="" defer="" src="https://cdn.shopify.com/shopifycloud/checkout-web/assets/runtime.baseline.en.d89ff570cee13010248e.js">
+  <script crossorigin="" defer="" src="https://cdn.shopify.com/shopifycloud/checkout-web/assets/runtime.baseline.en.86edfc0ecf74eb82c350.js">
   </script>
   <script crossorigin="" defer="" src="https://cdn.shopify.com/shopifycloud/checkout-web/assets/394.baseline.en.913afa7e5188c4ee3614.js">
   </script>
-  <script crossorigin="" defer="" src="https://cdn.shopify.com/shopifycloud/checkout-web/assets/270.baseline.en.81da528ff8f3a0249218.js">
+  <script crossorigin="" defer="" src="https://cdn.shopify.com/shopifycloud/checkout-web/assets/505.baseline.en.435864b344d42e62a4d0.js">
   </script>
   <script crossorigin="" defer="" src="https://cdn.shopify.com/shopifycloud/checkout-web/assets/891.baseline.en.a95a4f4f14965c819a76.js">
   </script>
-  <script crossorigin="" defer="" src="https://cdn.shopify.com/shopifycloud/checkout-web/assets/app.baseline.en.b2cad5c57d712b729528.js">
+  <script crossorigin="" defer="" src="https://cdn.shopify.com/shopifycloud/checkout-web/assets/app.baseline.en.acac4b57d253a53dcb99.js">
   </script>
   <script crossorigin="" defer="" src="https://cdn.shopify.com/shopifycloud/checkout-web/assets/977.baseline.en.ced19ebca9f312cb8c0c.js">
   </script>
   <script crossorigin="" defer="" src="https://cdn.shopify.com/shopifycloud/checkout-web/assets/96.baseline.en.a51d92a9365f28b84b4a.js">
   </script>
-  <script crossorigin="" defer="" src="https://cdn.shopify.com/shopifycloud/checkout-web/assets/554.baseline.en.5498b5764617933e5d0d.js">
+  <script crossorigin="" defer="" src="https://cdn.shopify.com/shopifycloud/checkout-web/assets/554.baseline.en.5697083f652c24d1b980.js">
   </script>
   <script crossorigin="" defer="" src="https://cdn.shopify.com/shopifycloud/checkout-web/assets/307.baseline.en.2db905cbc87f7ff42aa6.js">
   </script>
-  <script crossorigin="" defer="" src="https://cdn.shopify.com/shopifycloud/checkout-web/assets/OnePage.baseline.en.17243d456f6c1c741257.js">
+  <script crossorigin="" defer="" src="https://cdn.shopify.com/shopifycloud/checkout-web/assets/OnePage.baseline.en.ef88e07eac115c0f2558.js">
   </script>
   <link crossorigin="" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/394.baseline.en.8bf9736d9683f46f1dbb.css" rel="stylesheet"/>
   <link crossorigin="" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/app.baseline.en.77632396276cc0f709e7.css" rel="stylesheet"/>
   <link crossorigin="" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/268.baseline.en.0290b2bc7c2eca7c7c5e.css" rel="stylesheet"/>
   <script>
-   document.cookie = 'queue_token=' + "At4MHuS4P366cfy0zss3sREn90v7tKCoPSBWBLIuHe__93aPb1Sh4VNL3UEpysyM793f7CBsIwnHK1CVus3cKO7L2CavID_7Yb0vkbI05FrGsDLyvSzcJY-AZqRRg8UDqRDSud8nwAUcxioY4gRvfNnGMrEClAjHTWouGSwe2-MO" + '; path=/; max-age=3300';
+   document.cookie = 'queue_token=' + "AuDB3Ocoq01Z0O4kZ4b4OM5NkSAKBFAY_bBQjT9Glq6TLiRYCTGhlUF_gmTDuuLaOneWr4rvgqDs7Iv_eyD5l_bsuaVHKkwU8_VI46dwuyw3tW_P2CJsXwZtFSH1ymOK6rijKhqj8DeIn1j2OCNDWr4y8Zv7jtRf9VqMCQuE5dlz" + '; path=/; max-age=3300';
   </script>
   <script>
    window.location.href = 'https://yeezy.com/';
