@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
  <head>
   <script data-locksmith="" type="application/vnd.locksmith+json">
-   {"version":"v100","locked":false,"initialized":true,"scope":"index","access_granted":true,"access_denied":false,"requires_customer":false,"manual_lock":false,"remote_lock":false,"has_timeout":false,"remote_rendered":null,"hide_resource":false,"hide_links_to_resource":false,"transparent":true,"locks":{"all":[],"opened":[]},"keys":[],"keys_signature":"b613679a0814d9ec772f95d778c35fc5ff1697c493715653c6c712144292c5ad","state":{"template":"index","theme":131898704009,"product":null,"collection":null,"page":null,"blog":null,"article":null,"app":null},"now":1714369085,"path":"\/","locale_root_url":"\/","canonical_url":"https:\/\/yeezy.com\/","customer_id":null,"customer_id_signature":"b613679a0814d9ec772f95d778c35fc5ff1697c493715653c6c712144292c5ad","cart":null}
+   {"version":"v100","locked":false,"initialized":true,"scope":"index","access_granted":true,"access_denied":false,"requires_customer":false,"manual_lock":false,"remote_lock":false,"has_timeout":false,"remote_rendered":null,"hide_resource":false,"hide_links_to_resource":false,"transparent":true,"locks":{"all":[],"opened":[]},"keys":[],"keys_signature":"b613679a0814d9ec772f95d778c35fc5ff1697c493715653c6c712144292c5ad","state":{"template":"index","theme":131898704009,"product":null,"collection":null,"page":null,"blog":null,"article":null,"app":null},"now":1714369447,"path":"\/","locale_root_url":"\/","canonical_url":"https:\/\/yeezy.com\/","customer_id":null,"customer_id_signature":"b613679a0814d9ec772f95d778c35fc5ff1697c493715653c6c712144292c5ad","cart":null}
   </script>
   <script data-locksmith="">
    !function(){var require=undefined,reqwest=function(){function succeed(e){var t=protocolRe.exec(e.url);return t=t&&t[1]||context.location.protocol,httpsRe.test(t)?twoHundo.test(e.request.status):!!e.request.response}function handleReadyState(e,t,n){return function(){return e._aborted?n(e.request):e._timedOut?n(e.request,"Request is aborted: timeout"):void(e.request&&4==e.request[readyState]&&(e.request.onreadystatechange=noop,succeed(e)?t(e.request):n(e.request)))}}function setHeaders(e,t){var n,s=t.headers||{};s.Accept=s.Accept||defaultHeaders.accept[t.type]||defaultHeaders.accept["*"];var r="undefined"!=typeof FormData&&t.data instanceof FormData;for(n in!t.crossOrigin&&!s[requestedWith]&&(s[requestedWith]=defaultHeaders.requestedWith),!s[contentType]&&!r&&(s[contentType]=t.contentType||defaultHeaders.contentType),s)s.hasOwnProperty(n)&&"setRequestHeader"in e&&e.setRequestHeader(n,s[n])}function setCredentials(e,t){"undefined"!=typeof t.withCredentials&&"undefined"!=typeof e.withCredentials&&(e.withCredentials=!!t.withCredentials)}function generalCallback(e){lastValue=e}function urlappend(e,t){return e+(/[?]/.test(e)?"&":"?")+t}function handleJsonp(e,t,n,s){var r=uniqid++,o=e.jsonpCallback||"callback",a=e.jsonpCallbackName||reqwest.getcallbackPrefix(r),i=new RegExp("((^|[?]|&)"+o+")=([^&]+)"),l=s.match(i),c=doc.createElement("script"),u=0,d=-1!==navigator.userAgent.indexOf("MSIE 10.0");return l?"?"===l[3]?s=s.replace(i,"$1="+a):a=l[3]:s=urlappend(s,o+"="+a),context[a]=generalCallback,c.type="text/javascript",c.src=s,c.async=!0,"undefined"!=typeof c.onreadystatechange&&!d&&(c.htmlFor=c.id="_reqwest_"+r),c.onload=c.onreadystatechange=function(){if(c[readyState]&&"complete"!==c[readyState]&&"loaded"!==c[readyState]||u)return!1;c.onload=c.onreadystatechange=null,c.onclick&&c.onclick(),t(lastValue),lastValue=undefined,head.removeChild(c),u=1},head.appendChild(c),{abort:function(){c.onload=c.onreadystatechange=null,n({},"Request is aborted: timeout",{}),lastValue=undefined,head.removeChild(c),u=1}}}function getRequest(e,t){var n,s=this.o,r=(s.method||"GET").toUpperCase(),o="string"==typeof s?s:s.url,a=!1!==s.processData&&s.data&&"string"!=typeof s.data?reqwest.toQueryString(s.data):s.data||null,i=!1;return("jsonp"==s.type||"GET"==r)&&a&&(o=urlappend(o,a),a=null),"jsonp"==s.type?handleJsonp(s,e,t,o):((n=s.xhr&&s.xhr(s)||xhr(s)).open(r,o,!1!==s.async),setHeaders(n,s),setCredentials(n,s),context[xDomainRequest]&&n instanceof context[xDomainRequest]?(n.onload=e,n.onerror=t,n.onprogress=function(){},i=!0):n.onreadystatechange=handleReadyState(this,e,t),s.before&&s.before(n),i?setTimeout(function(){n.send(a)},200):n.send(a),n)}function Reqwest(e,t){this.o=e,this.fn=t,init.apply(this,arguments)}function setType(e){return null===e?undefined:e.match("json")?"json":e.match("javascript")?"js":e.match("text")?"html":e.match("xml")?"xml":void 0}function init(o,fn){function complete(e){for(o.timeout&&clearTimeout(self.timeout),self.timeout=null;0<self._completeHandlers.length;)self._completeHandlers.shift()(e)}function success(resp){var type=o.type||resp&&setType(resp.getResponseHeader("Content-Type"));resp="jsonp"!==type?self.request:resp;var filteredResponse=globalSetupOptions.dataFilter(resp.responseText,type),r=filteredResponse;try{resp.responseText=r}catch(e){}if(r)switch(type){case"json":try{resp=context.JSON?context.JSON.parse(r):eval("("+r+")")}catch(err){return error(resp,"Could not parse JSON in response",err)}break;case"js":resp=eval(r);break;case"html":resp=r;break;case"xml":resp=resp.responseXML&&resp.responseXML.parseError&&resp.responseXML.parseError.errorCode&&resp.responseXML.parseError.reason?null:resp.responseXML}for(self._responseArgs.resp=resp,self._fulfilled=!0,fn(resp),self._successHandler(resp);0<self._fulfillmentHandlers.length;)resp=self._fulfillmentHandlers.shift()(resp);complete(resp)}function timedOut(){self._timedOut=!0,self.request.abort()}function error(e,t,n){for(e=self.request,self._responseArgs.resp=e,self._responseArgs.msg=t,self._responseArgs.t=n,self._erred=!0;0<self._errorHandlers.length;)self._errorHandlers.shift()(e,t,n);complete(e)}this.url="string"==typeof o?o:o.url,this.timeout=null,this._fulfilled=!1,this._successHandler=function(){},this._fulfillmentHandlers=[],this._errorHandlers=[],this._completeHandlers=[],this._erred=!1,this._responseArgs={};var self=this;fn=fn||function(){},o.timeout&&(this.timeout=setTimeout(function(){timedOut()},o.timeout)),o.success&&(this._successHandler=function(){o.success.apply(o,arguments)}),o.error&&this._errorHandlers.push(function(){o.error.apply(o,arguments)}),o.complete&&this._completeHandlers.push(function(){o.complete.apply(o,arguments)}),this.request=getRequest.call(this,success,error)}function reqwest(e,t){return new Reqwest(e,t)}function normalize(e){return e?e.replace(/\r?\n/g,"\r\n"):""}function serial(e,t){var n,s,r,o,a=e.name,i=e.tagName.toLowerCase(),l=function(e){e&&!e.disabled&&t(a,normalize(e.attributes.value&&e.attributes.value.specified?e.value:e.text))};if(!e.disabled&&a)switch(i){case"input":/reset|button|image|file/i.test(e.type)||(n=/checkbox/i.test(e.type),s=/radio/i.test(e.type),r=e.value,(!n&&!s||e.checked)&&t(a,normalize(n&&""===r?"on":r)));break;case"textarea":t(a,normalize(e.value));break;case"select":if("select-one"===e.type.toLowerCase())l(0<=e.selectedIndex?e.options[e.selectedIndex]:null);else for(o=0;e.length&&o<e.length;o++)e.options[o].selected&&l(e.options[o])}}function eachFormElement(){var e,t,o=this,n=function(e,t){var n,s,r;for(n=0;n<t.length;n++)for(r=e[byTag](t[n]),s=0;s<r.length;s++)serial(r[s],o)};for(t=0;t<arguments.length;t++)e=arguments[t],/input|select|textarea/i.test(e.tagName)&&serial(e,o),n(e,["input","select","textarea"])}function serializeQueryString(){return reqwest.toQueryString(reqwest.serializeArray.apply(null,arguments))}function serializeHash(){var n={};return eachFormElement.apply(function(e,t){e in n?(n[e]&&!isArray(n[e])&&(n[e]=[n[e]]),n[e].push(t)):n[e]=t},arguments),n}function buildParams(e,t,n,s){var r,o,a,i=/\[\]$/;if(isArray(t))for(o=0;t&&o<t.length;o++)a=t[o],n||i.test(e)?s(e,a):buildParams(e+"["+("object"==typeof a?o:"")+"]",a,n,s);else if(t&&"[object Object]"===t.toString())for(r in t)buildParams(e+"["+r+"]",t[r],n,s);else s(e,t)}var context=this,XHR2;if("window"in context)var doc=document,byTag="getElementsByTagName",head=doc[byTag]("head")[0];else try{XHR2=require("xhr2")}catch(ex){throw new Error("Peer dependency `xhr2` required! Please npm install xhr2")}var httpsRe=/^http/,protocolRe=/(^\w+):\/\//,twoHundo=/^(20\d|1223)$/,readyState="readyState",contentType="Content-Type",requestedWith="X-Requested-With",uniqid=0,callbackPrefix="reqwest_"+ +new Date,lastValue,xmlHttpRequest="XMLHttpRequest",xDomainRequest="XDomainRequest",noop=function(){},isArray="function"==typeof Array.isArray?Array.isArray:function(e){return e instanceof Array},defaultHeaders={contentType:"application/x-www-form-urlencoded",requestedWith:xmlHttpRequest,accept:{"*":"text/javascript, text/html, application/xml, text/xml, */*",xml:"application/xml, text/xml",html:"text/html",text:"text/plain",json:"application/json, text/javascript",js:"application/javascript, text/javascript"}},xhr=function(e){if(!0!==e.crossOrigin)return context[xmlHttpRequest]?new XMLHttpRequest:XHR2?new XHR2:new ActiveXObject("Microsoft.XMLHTTP");var t=context[xmlHttpRequest]?new XMLHttpRequest:null;if(t&&"withCredentials"in t)return t;if(context[xDomainRequest])return new XDomainRequest;throw new Error("Browser does not support cross-origin requests")},globalSetupOptions={dataFilter:function(e){return e}};return Reqwest.prototype={abort:function(){this._aborted=!0,this.request.abort()},retry:function(){init.call(this,this.o,this.fn)},then:function(e,t){return e=e||function(){},t=t||function(){},this._fulfilled?this._responseArgs.resp=e(this._responseArgs.resp):this._erred?t(this._responseArgs.resp,this._responseArgs.msg,this._responseArgs.t):(this._fulfillmentHandlers.push(e),this._errorHandlers.push(t)),this},always:function(e){return this._fulfilled||this._erred?e(this._responseArgs.resp):this._completeHandlers.push(e),this},fail:function(e){return this._erred?e(this._responseArgs.resp,this._responseArgs.msg,this._responseArgs.t):this._errorHandlers.push(e),this},"catch":function(e){return this.fail(e)}},reqwest.serializeArray=function(){var n=[];return eachFormElement.apply(function(e,t){n.push({name:e,value:t})},arguments),n},reqwest.serialize=function(){if(0===arguments.length)return"";var e,t=Array.prototype.slice.call(arguments,0);return(e=t.pop())&&e.nodeType&&t.push(e)&&(e=null),e&&(e=e.type),("map"==e?serializeHash:"array"==e?reqwest.serializeArray:serializeQueryString).apply(null,t)},reqwest.toQueryString=function(e,t){var n,s,r=t||!1,o=[],a=encodeURIComponent,i=function(e,t){t="function"==typeof t?t():null==t?"":t,o[o.length]=a(e)+"="+a(t)};if(isArray(e))for(s=0;e&&s<e.length;s++)i(e[s].name,e[s].value);else for(n in e)e.hasOwnProperty(n)&&buildParams(n,e[n],r,i);return o.join("&").replace(/%20/g,"+")},reqwest.getcallbackPrefix=function(){return callbackPrefix},reqwest.compat=function(e,t){return e&&(e.type&&(e.method=e.type)&&delete e.type,e.dataType&&(e.type=e.dataType),e.jsonpCallback&&(e.jsonpCallbackName=e.jsonpCallback)&&delete e.jsonpCallback,e.jsonp&&(e.jsonpCallback=e.jsonp)),new Reqwest(e,t)},reqwest.ajaxSetup=function(e){for(var t in e=e||{})globalSetupOptions[t]=e[t]},reqwest}();
@@ -16,7 +16,7 @@
    Locksmith.cache.cart=null
   </script>
   <script data-locksmith="">
-   Locksmith.jsonTag="\u003cscript type=\"application\/vnd.locksmith+json\" data-locksmith\u003e{\"version\":\"v100\",\"locked\":false,\"initialized\":true,\"scope\":\"index\",\"access_granted\":true,\"access_denied\":false,\"requires_customer\":false,\"manual_lock\":false,\"remote_lock\":false,\"has_timeout\":false,\"remote_rendered\":null,\"hide_resource\":false,\"hide_links_to_resource\":false,\"transparent\":true,\"locks\":{\"all\":[],\"opened\":[]},\"keys\":[],\"keys_signature\":\"b613679a0814d9ec772f95d778c35fc5ff1697c493715653c6c712144292c5ad\",\"state\":{\"template\":\"index\",\"theme\":131898704009,\"product\":null,\"collection\":null,\"page\":null,\"blog\":null,\"article\":null,\"app\":null},\"now\":1714369085,\"path\":\"\\\/\",\"locale_root_url\":\"\\\/\",\"canonical_url\":\"https:\\\/\\\/yeezy.com\\\/\",\"customer_id\":null,\"customer_id_signature\":\"b613679a0814d9ec772f95d778c35fc5ff1697c493715653c6c712144292c5ad\",\"cart\":null}\u003c\/script\u003e";Locksmith.jsonTagSignature="9fc82a4adec0b89e6464cb4ee6c1aac0c602b9e83b13c2023707f7a310f33eaf"
+   Locksmith.jsonTag="\u003cscript type=\"application\/vnd.locksmith+json\" data-locksmith\u003e{\"version\":\"v100\",\"locked\":false,\"initialized\":true,\"scope\":\"index\",\"access_granted\":true,\"access_denied\":false,\"requires_customer\":false,\"manual_lock\":false,\"remote_lock\":false,\"has_timeout\":false,\"remote_rendered\":null,\"hide_resource\":false,\"hide_links_to_resource\":false,\"transparent\":true,\"locks\":{\"all\":[],\"opened\":[]},\"keys\":[],\"keys_signature\":\"b613679a0814d9ec772f95d778c35fc5ff1697c493715653c6c712144292c5ad\",\"state\":{\"template\":\"index\",\"theme\":131898704009,\"product\":null,\"collection\":null,\"page\":null,\"blog\":null,\"article\":null,\"app\":null},\"now\":1714369447,\"path\":\"\\\/\",\"locale_root_url\":\"\\\/\",\"canonical_url\":\"https:\\\/\\\/yeezy.com\\\/\",\"customer_id\":null,\"customer_id_signature\":\"b613679a0814d9ec772f95d778c35fc5ff1697c493715653c6c712144292c5ad\",\"cart\":null}\u003c\/script\u003e";Locksmith.jsonTagSignature="6a43f6647450bf4f690661784a2faeed2e7caf236d5ca4d47653af20ff9a4cdc"
   </script>
   <meta charset="utf-8"/>
   <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
@@ -112,7 +112,7 @@ window.ShopifyPay.apiHost = "shop.app\/pay";
 })();
   </script>
   <script id="__st">
-   var __st={"a":27847098505,"offset":-25200,"reqid":"d9477694-b588-4f71-bbdf-a925772405b8-1714369085","pageurl":"yeezy.com\/","u":"705e4f581c62","p":"home"};
+   var __st={"a":27847098505,"offset":-25200,"reqid":"b8a1f5b1-be2c-4982-8b2f-3110b46110e2-1714369446","pageurl":"yeezy.com\/","u":"79d24adc594a","p":"home"};
   </script>
   <script>
    window.ShopifyPaypalV4VisibilityTracking = true;
@@ -3944,6 +3944,261 @@ for (var attr in meta) {
             <div class="product-card-details">
              <h3 class="product-card-title">
               GOSHA BLACK DOGS GREY SOCK
+             </h3>
+             <span class="product-card-price">
+              $20
+             </span>
+            </div>
+           </a>
+          </div>
+          <div class="grid-item">
+           <a class="product-card" href="/products/ivory-socks-2-pair ">
+            <div class="product-card-image" id="card__prd_id-7618535489673">
+            </div>
+            <style>
+             #card__prd_id-7618535489673 {
+                background-image: url(//yeezy.com/cdn/shop/files/Cream-Ash.jpg?height=650&v=1714369074);
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                animation: none;
+                animation-play-state: paused;/* Cambia la duración y el estilo de la animación según sea necesario */
+              }
+            </style>
+            <style>
+             #card__prd_id-7618535489673 {
+                    background-image:url('//yeezy.com/cdn/shop/files/1_aab85487-5bbb-4585-85d1-0f009d8f2cee.png?height=650&v=1714365170'),url('//yeezy.com/cdn/shop/files/2_782b1377-69e3-459a-963a-99282a39da6f.png?height=650&v=1714365174'),url('//yeezy.com/cdn/shop/files/3_42a2b672-bddf-41a4-bae0-94bed003a4f2.png?height=650&v=1714365169'),url('//yeezy.com/cdn/shop/files/4_34688e74-fcde-4415-bad3-32169c74c891.png?height=650&v=1714365174'),url('//yeezy.com/cdn/shop/files/5_9765c069-3c8a-4c1d-a729-0a25bd35353e.png?height=650&v=1714365173'),url('//yeezy.com/cdn/shop/files/6_df074374-f965-4bd2-9b77-6ae9a1509ca8.png?height=650&v=1714365174'),url('//yeezy.com/cdn/shop/files/7_26ba57b4-f984-46a0-aa0e-3dac43b37d32.png?height=650&v=1714365169'),url('//yeezy.com/cdn/shop/files/8_d791530f-c295-4fae-8648-781328fc8486.png?height=650&v=1714365174');
+                    background-size: contain,0 0,0 0,0 0,0 0,0 0,0 0,0 0;
+                    background-repeat: no-repeat;
+                    background-position: top;
+                    animation: none;
+                    animation-play-state: paused;/* Cambia la duración y el estilo de la animación según sea necesario */
+                  }
+                  
+                  #card__prd_id-7618535489673:hover {
+                    animation-play-state: running;
+                    animation: rotateBackgroundcard__prd_id-7618535489673 6s step-start infinite;
+                  }
+    
+                  
+                  
+                  
+                  
+                  @keyframes rotateBackgroundcard__prd_id-7618535489673 {
+                      
+                      
+                      0.0% {
+                        background-size: contain,0 0,0 0,0 0,0 0,0 0,0 0,0 0
+                       }
+                      
+                      
+                      12.5% {
+                        background-size: 0 0,contain,0 0,0 0,0 0,0 0,0 0,0 0
+                       }
+                      
+                      
+                      25.0% {
+                        background-size: 0 0,0 0,contain,0 0,0 0,0 0,0 0,0 0
+                       }
+                      
+                      
+                      37.5% {
+                        background-size: 0 0,0 0,0 0,contain,0 0,0 0,0 0,0 0
+                       }
+                      
+                      
+                      50.0% {
+                        background-size: 0 0,0 0,0 0,0 0,contain,0 0,0 0,0 0
+                       }
+                      
+                      
+                      62.5% {
+                        background-size: 0 0,0 0,0 0,0 0,0 0,contain,0 0,0 0
+                       }
+                      
+                      
+                      75.0% {
+                        background-size: 0 0,0 0,0 0,0 0,0 0,0 0,contain,0 0
+                       }
+                      
+                      
+                      87.5% {
+                        background-size: 0 0,0 0,0 0,0 0,0 0,0 0,0 0,contain
+                       }}
+            </style>
+            <div class="product-card-details">
+             <h3 class="product-card-title">
+              IVORY SOCKS 2 PAIR
+             </h3>
+             <span class="product-card-price">
+              $20
+             </span>
+            </div>
+           </a>
+          </div>
+          <div class="grid-item">
+           <a class="product-card" href="/products/heather-grey-socks-2-pair ">
+            <div class="product-card-image" id="card__prd_id-7618537029769">
+            </div>
+            <style>
+             #card__prd_id-7618537029769 {
+                background-image: url(//yeezy.com/cdn/shop/files/Heather-grey.jpg?height=650&v=1714368592);
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                animation: none;
+                animation-play-state: paused;/* Cambia la duración y el estilo de la animación según sea necesario */
+              }
+            </style>
+            <style>
+             #card__prd_id-7618537029769 {
+                    background-image:url('//yeezy.com/cdn/shop/files/1_483a590d-380a-4624-a812-a33ea7e1f776.png?height=650&v=1714368616'),url('//yeezy.com/cdn/shop/files/2_14225a63-c796-43aa-a0a4-cbbc05aa09bb.png?height=650&v=1714368621'),url('//yeezy.com/cdn/shop/files/3_54700d95-0b7f-4df8-bd98-bb8ef9b79a25.png?height=650&v=1714368616'),url('//yeezy.com/cdn/shop/files/4_08b16522-65ea-4015-8aa6-fa87ed3a78d3.png?height=650&v=1714368621'),url('//yeezy.com/cdn/shop/files/5_1c07502a-f288-43ae-bfff-ac0a4befc825.png?height=650&v=1714368620'),url('//yeezy.com/cdn/shop/files/6_a7bb3d81-6c3d-415b-8717-00fe2e544524.png?height=650&v=1714368621'),url('//yeezy.com/cdn/shop/files/7_40529bdf-4941-4958-b957-f924e472b62d.png?height=650&v=1714368615'),url('//yeezy.com/cdn/shop/files/8_f924d60a-8e8e-4c33-a6ea-1380eb23362f.png?height=650&v=1714368622');
+                    background-size: contain,0 0,0 0,0 0,0 0,0 0,0 0,0 0;
+                    background-repeat: no-repeat;
+                    background-position: top;
+                    animation: none;
+                    animation-play-state: paused;/* Cambia la duración y el estilo de la animación según sea necesario */
+                  }
+                  
+                  #card__prd_id-7618537029769:hover {
+                    animation-play-state: running;
+                    animation: rotateBackgroundcard__prd_id-7618537029769 6s step-start infinite;
+                  }
+    
+                  
+                  
+                  
+                  
+                  @keyframes rotateBackgroundcard__prd_id-7618537029769 {
+                      
+                      
+                      0.0% {
+                        background-size: contain,0 0,0 0,0 0,0 0,0 0,0 0,0 0
+                       }
+                      
+                      
+                      12.5% {
+                        background-size: 0 0,contain,0 0,0 0,0 0,0 0,0 0,0 0
+                       }
+                      
+                      
+                      25.0% {
+                        background-size: 0 0,0 0,contain,0 0,0 0,0 0,0 0,0 0
+                       }
+                      
+                      
+                      37.5% {
+                        background-size: 0 0,0 0,0 0,contain,0 0,0 0,0 0,0 0
+                       }
+                      
+                      
+                      50.0% {
+                        background-size: 0 0,0 0,0 0,0 0,contain,0 0,0 0,0 0
+                       }
+                      
+                      
+                      62.5% {
+                        background-size: 0 0,0 0,0 0,0 0,0 0,contain,0 0,0 0
+                       }
+                      
+                      
+                      75.0% {
+                        background-size: 0 0,0 0,0 0,0 0,0 0,0 0,contain,0 0
+                       }
+                      
+                      
+                      87.5% {
+                        background-size: 0 0,0 0,0 0,0 0,0 0,0 0,0 0,contain
+                       }}
+            </style>
+            <div class="product-card-details">
+             <h3 class="product-card-title">
+              HEATHER GREY SOCKS 2 PAIR
+             </h3>
+             <span class="product-card-price">
+              $20
+             </span>
+            </div>
+           </a>
+          </div>
+          <div class="grid-item">
+           <a class="product-card" href="/products/black-socks-2-pair ">
+            <div class="product-card-image" id="card__prd_id-7618527559817">
+            </div>
+            <style>
+             #card__prd_id-7618527559817 {
+                background-image: url(//yeezy.com/cdn/shop/files/Black_44467a90-1e5f-4003-ac00-b1a70dc2dafa.jpg?height=650&v=1714369070);
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                animation: none;
+                animation-play-state: paused;/* Cambia la duración y el estilo de la animación según sea necesario */
+              }
+            </style>
+            <style>
+             #card__prd_id-7618527559817 {
+                    background-image:url('//yeezy.com/cdn/shop/files/1_8de24fd7-e743-4b58-aee5-8e09df6ee68a.png?height=650&v=1714365037'),url('//yeezy.com/cdn/shop/files/2_a9fa2b9d-f6dc-490d-9d48-35a8798f88f5.png?height=650&v=1714365041'),url('//yeezy.com/cdn/shop/files/3_d1617ff1-2fc7-4950-b6f6-deefa2163134.png?height=650&v=1714365034'),url('//yeezy.com/cdn/shop/files/4_2f10cabd-8aea-4fd2-b8fd-6de341a2ec9c.png?height=650&v=1714365040'),url('//yeezy.com/cdn/shop/files/5_b64d9ce3-0006-4941-9411-5eea8e234fd6.png?height=650&v=1714365040'),url('//yeezy.com/cdn/shop/files/6_915f8b06-b96d-4213-a8d8-1eea0fd935ee.png?height=650&v=1714365040'),url('//yeezy.com/cdn/shop/files/7_e7396121-4c92-40e2-995d-ae721e62162b.png?height=650&v=1714365032'),url('//yeezy.com/cdn/shop/files/8_89307139-41d5-4207-aee9-374fc92d990a.png?height=650&v=1714365041');
+                    background-size: contain,0 0,0 0,0 0,0 0,0 0,0 0,0 0;
+                    background-repeat: no-repeat;
+                    background-position: top;
+                    animation: none;
+                    animation-play-state: paused;/* Cambia la duración y el estilo de la animación según sea necesario */
+                  }
+                  
+                  #card__prd_id-7618527559817:hover {
+                    animation-play-state: running;
+                    animation: rotateBackgroundcard__prd_id-7618527559817 6s step-start infinite;
+                  }
+    
+                  
+                  
+                  
+                  
+                  @keyframes rotateBackgroundcard__prd_id-7618527559817 {
+                      
+                      
+                      0.0% {
+                        background-size: contain,0 0,0 0,0 0,0 0,0 0,0 0,0 0
+                       }
+                      
+                      
+                      12.5% {
+                        background-size: 0 0,contain,0 0,0 0,0 0,0 0,0 0,0 0
+                       }
+                      
+                      
+                      25.0% {
+                        background-size: 0 0,0 0,contain,0 0,0 0,0 0,0 0,0 0
+                       }
+                      
+                      
+                      37.5% {
+                        background-size: 0 0,0 0,0 0,contain,0 0,0 0,0 0,0 0
+                       }
+                      
+                      
+                      50.0% {
+                        background-size: 0 0,0 0,0 0,0 0,contain,0 0,0 0,0 0
+                       }
+                      
+                      
+                      62.5% {
+                        background-size: 0 0,0 0,0 0,0 0,0 0,contain,0 0,0 0
+                       }
+                      
+                      
+                      75.0% {
+                        background-size: 0 0,0 0,0 0,0 0,0 0,0 0,contain,0 0
+                       }
+                      
+                      
+                      87.5% {
+                        background-size: 0 0,0 0,0 0,0 0,0 0,0 0,0 0,contain
+                       }}
+            </style>
+            <div class="product-card-details">
+             <h3 class="product-card-title">
+              BLACK SOCKS 2 PAIR
              </h3>
              <span class="product-card-price">
               $20
